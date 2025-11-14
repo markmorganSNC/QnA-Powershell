@@ -1,7 +1,7 @@
 # Variables
-$endpoint = "https://clyxportal-chatbot-ls-t-267.cognitiveservices.azure.com"
-$apiKey = "88jS4sMfQ5PHLoIU9CF6ibW6l1swni2PYva3xFsK0oSQHAUdQcI7JQQJ99BJACmepeSXJ3w3AAAaACOG13vr"
-$projectName = "clyxportal-chatbot-lp-t-267"
+$endpoint = "https://<your-resource-name>.cognitiveservices.azure.com"
+$apiKey = "<your-api-key>"
+$projectName = "<your-project-name>"
 $outputFile = "QnAExport.txt"
 
 # API URL
@@ -34,3 +34,4 @@ foreach ($qna in $response.value) {
 $output | Out-File -FilePath $outputFile -Encoding UTF8
 
 Write-Host "Export completed. File saved to $outputFile"
+
